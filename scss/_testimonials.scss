@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixin";
+#about {
+    min-height: 894px;
+    background-color:#d74680;
+    padding-top: 119px;
+    .title {
+        @include title-underline(0.14, #000);
+        color: #fff;
+    }
+    .subtitle {
+        margin-top: 43px;
+    }
+    .col-lg-6 {
+        @include flex;
+        &::nth-child(n+1) {
+            margin-left: 20px;
+        }
+    }
+    .testimonial-img {
+        height: 96px;
+        width: 96px;
+        border-radius: 50%;
+    }
+    .testimonial-text {
+        font-size: 21px;
+        line-height: 31px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+    }
+    .testimonial-right {
+        max-width: 330px;
+    }
+    .testimonials-container {
+        margin-top: 65px;
+    }
+}

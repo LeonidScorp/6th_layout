@@ -1,0 +1,70 @@
+@import "mixin";
+@import "variables";
+#team {
+    background-color: #e7f1f8;
+    min-height: 914px;
+    .container {
+        max-width: 1120px;
+    }
+    padding-top: 119px;
+    .subtitle {
+        margin-top: 47px;
+        color: $black;
+    }
+    .title {
+        @include title-underline(0.74, #bdd1df);
+        &::before {
+            top:52px;
+        }
+    }
+    .row {
+        margin-top: 76px;
+    }
+}
+.team-img {
+    border-radius: 50%;
+}
+.team-title {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #27283d;
+    margin-top: 40px;
+}
+.team-role {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #30bae7;
+    margin-top: 12px;
+}
+.team-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    margin-top: 26px;
+    max-width: 210px;
+    margin: 22px auto 0;
+}
+.team-social {
+    margin: 28px auto 0;
+    max-width: 200px;
+    @include flex-center;
+    li {
+        @include flex-center;
+        list-style: none;
+        width: 32px;
+        height: 32px;
+        background-color: #bdd1df;
+        border-radius: 50%;
+        margin: 0 6px;
+        .fab, .fas {
+            color: white;
+        }
+    }
+}

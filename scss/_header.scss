@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixin";
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.main-navigation {
+    padding-top: 57px;
+    .main-logo {
+        margin-left: 61px;
+        width: 118px;
+        height: 37px;
+    }
+    width: $content-width;
+    margin: 0 auto;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    &-links {
+        margin-right: 29px;
+        @include flex;
+        li {
+            margin-right: 10.5px;
+            &:last-child {
+                margin-right: 0;
+            }
+            height: 32px;
+            padding: 0 17px;
+            list-style: none;
+            &:hover {
+                background-color: #643a79;
+            }
+            a {
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin flex($direction:row) {
+    display: flex;
+    flex-flow: $direction wrap;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin title-underline($opacity:1, $color:#000) {
+    position: relative;
+    &::before {
+        content: " ";
+        width: 87px;
+        height: 4px;
+        position: absolute;
+        left: calc(50% - 43.5px);
+        top: 50px;
+        z-index: 2;
+        opacity: $opacity;
+        background-color: $color;
+    }
+}

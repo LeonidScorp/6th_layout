@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+#skills {
+    .col-lg-6 {
+        position: relative;
+    }
+    .container {
+        max-width: 1120px;
+    }
+    min-height: 655px;
+    padding-top: 117px;
+    .title {
+        color: $black;
+        @include title-underline(1, #dfe8ed);
+    }
+    .subtitle {
+        color: $black;
+        max-width: 570px;
+        margin: 44px auto 0;
+    }
+    .row {
+        margin-top: 81px;
+    }
+}
+.skills-percentage {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border: solid 13px transparent;
+    border-radius: 50%;
+    line-height: 132px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $black;
+    padding-left: 11px;
+    span {
+        font-size: 34px;
+    }
+}
+.percentage-img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 80px);
+}
+.skills-title {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $black;
+    margin-top: 31px;
+}

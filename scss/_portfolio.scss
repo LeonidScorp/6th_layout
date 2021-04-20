@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixin";
+#portfolio {
+    min-height: 1423px;
+    padding-top: 120px;
+    background-color: #ffdd99;
+    .title {
+        @include title-underline(1, #e5c37f);
+        color: $dark;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: $dark;
+        max-width: 520px;
+        margin: 43px auto 0;
+
+    }
+    .control-buttons {
+        margin-top: 40px;
+        .btn-control {
+            padding: 0;
+            font-family: $font-family;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 19px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: $dark;
+            background-color: rgba(0,0,0,0.07);
+            border: none;
+            border-radius: 5%;
+            height: 38px;
+            min-width: 84px;
+            margin-right: 7px;
+            &:nth-child(3){
+                width: 90px;
+            }
+            &:last-child {
+                margin-right: 0;
+                width: 90px;
+            }
+            &:hover, &.active {
+                background-color: #fff;
+            }
+        }
+    }
+    .row {
+        margin-top: 62px;
+    }
+    .portfolio-title {
+        font-size: 18px;
+        line-height: 19px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: $dark;
+        margin-top: 28px;
+    }
+    .col-lg-6 {
+        margin-bottom: 64px;
+    }
+    .big-button {
+        margin-top: 16px;
+        background-color: #17c2a4;
+        border-bottom: solid 4px #13a58b;
+    }
+}

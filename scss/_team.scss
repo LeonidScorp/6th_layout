@@ -10,15 +10,39 @@
     .subtitle {
         margin-top: 47px;
         color: $black;
+        letter-spacing: 0.005em;
+        font-size: 18.6px;
     }
     .title {
         @include title-underline(0.74, #bdd1df);
         &::before {
             top:52px;
         }
+        left: 2px;
     }
     .row {
         margin-top: 76px;
+    }
+    .col-lg-3 {
+        &:last-child {
+            .team-title {
+                position: relative;
+                left: 5px;
+            }
+            .team-role {
+                position: relative;
+                left: 5px;
+            }
+            .team-description {
+                position: relative;
+                left: 5px;
+            }
+        }
+        &:first-child {
+            .team-description {
+                top: -1px;
+            }
+        }
     }
 }
 .team-img {
@@ -31,7 +55,7 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     color: #27283d;
-    margin-top: 40px;
+    margin-top: 34px;
 }
 .team-role {
     font-size: 16px;
@@ -47,7 +71,8 @@
     font-weight: 300;
     letter-spacing: 0.02em;
     color: #3c4761;
-    margin-top: 26px;
+    position: relative;
+    top: 1px;
     max-width: 210px;
     margin: 22px auto 0;
 }

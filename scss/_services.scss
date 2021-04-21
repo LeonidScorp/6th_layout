@@ -16,17 +16,49 @@
         letter-spacing: 0.0225em;
         left: 2px;
     }
+    .col-lg-3 {
+        &:first-child {
+            .service-description {
+                position: relative;
+                left: -2px;
+            }
+            .service-title {
+                position: relative;
+                left: -2px;
+            }
+        }
+        &:last-child {
+            img {
+                margin-right: 0;
+            }
+            .service-description {
+                position: relative;
+                left: 2px;
+            }
+        }
+        &:nth-child(3) {
+            img {
+                position: relative;
+                left: -10px;
+            }
+            
+        }
+    }
 }
 .services-container {
     margin-top: 64px;
 }
 .service-img-container {
-    @include flex;
+    @include flex-center;
     height: 160px;
     width: 160px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    img {
+        margin-right: -8px;
+        margin-top: -2px;
+    }
 }
 .service-title {
     margin-top: 42px;
@@ -43,7 +75,8 @@
     font-weight: 300;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-top: 22px;
+    max-width: 200px;
+    margin: 22px auto 0;
 }
 .main-services-container {
     max-width: 1115px;

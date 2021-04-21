@@ -15,8 +15,9 @@ body {
     box-sizing: border-box;
 }
 .big-button {
-    line-height: 26px;
-    font-size: 1.004rem;
+    font-family: $font-family;
+    line-height: 25px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.02em;
     color: #ffffff;

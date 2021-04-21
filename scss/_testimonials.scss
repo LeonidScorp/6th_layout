@@ -7,6 +7,7 @@
     .title {
         @include title-underline(0.14, #000);
         color: #fff;
+        left: 3px;
     }
     .subtitle {
         margin-top: 43px;
@@ -20,6 +21,11 @@
         &:nth-child(n+3) {
             margin-top: 142px;
         }
+        &:last-child {
+            .testimonial-right {
+                margin-left: 46px;
+            }
+        }
     }
 }
 .testimonial-img {
@@ -32,13 +38,13 @@
     line-height: 31px;
     font-weight: 400;
     font-style: italic;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.035em;
     color: #ffffff;
     margin-top: 4px;
 }
 .testimonial-right {
-    max-width: 360px;
-    margin-left: 49px;
+    max-width: 370px;
+    margin-left: 48px;
 }
 .testimonials-container {
     margin-top: 65px;

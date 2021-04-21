@@ -7,6 +7,7 @@
     .title {
         @include title-underline(1, #e5c37f);
         color: $dark;
+        left: 3px;
     }
     .subtitle {
         font-size: 18px;
@@ -16,55 +17,117 @@
         color: $dark;
         max-width: 520px;
         margin: 43px auto 0;
-
-    }
-    .control-buttons {
-        margin-top: 40px;
-        .btn-control {
-            padding: 0;
-            font-family: $font-family;
-            text-transform: uppercase;
-            font-size: 18px;
-            line-height: 19px;
-            font-weight: 400;
-            letter-spacing: 0.02em;
-            color: $dark;
-            background-color: rgba(0,0,0,0.07);
-            border: none;
-            border-radius: 5%;
-            height: 38px;
-            min-width: 84px;
-            margin-right: 7px;
-            &:nth-child(3){
-                width: 90px;
-            }
-            &:last-child {
-                margin-right: 0;
-                width: 90px;
-            }
-            &:hover, &.active {
-                background-color: #fff;
-            }
+        .correction {
+            position: relative;
+            left: 2px;
+            letter-spacing: 0.024em;
         }
     }
     .row {
         margin-top: 62px;
     }
-    .portfolio-title {
-        font-size: 18px;
-        line-height: 19px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.02em;
-        color: $dark;
-        margin-top: 28px;
-    }
-    .col-lg-6 {
-        margin-bottom: 64px;
+    
+    .col-xl-6 {
+        margin-bottom: 63px;
+        &:first-child {
+            position: relative;
+            left: 5px;
+            .portfolio-title {
+                position: relative;
+                left: 2px;
+            }
+        }
+        &:nth-child(2) {
+            .portfolio-image {
+                position: relative;
+                left: -4px;
+                top: 3px;
+            }
+            .portfolio-title {
+                position: relative;
+                left: -7px;
+            }
+        }
+        &:nth-child(3) {
+            .portfolio-image {
+                position: relative;
+                left: 7px;
+                top: -1px;
+            }
+            .portfolio-title {
+                position: relative;
+                top: -2px;
+                left: -3px;
+            }
+        }
+        &:last-child {
+            .portfolio-image {
+                position: relative;
+                left: -3px;
+            }
+            .portfolio-title {
+                position: relative;
+                top: -2px;
+                left: 4px;
+            }
+        }
     }
     .big-button {
         margin-top: 16px;
         background-color: #17c2a4;
         border-bottom: solid 4px #13a58b;
+        padding-left: 1rem;
+        margin-bottom: 70px;
+    }
+}
+.portfolio-title {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $dark;
+    margin-top: 23px;
+}
+.control-buttons {
+    margin-top: 40px;
+    .btn-control {
+        &:first-child {
+            position: relative;
+            left: 2px;
+            &::first-letter {
+                margin-left: -1px;
+            }
+        }
+        &:nth-child(2) {
+            padding-left: 5px;
+        }
+        &:nth-child(3) {
+            padding-left: 2px;
+        }
+        padding: 0;
+        font-family: $font-family;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: $dark;
+        background-color: rgba(0,0,0,0.07);
+        border: none;
+        border-radius: 5%;
+        height: 38px;
+        min-width: 84px;
+        margin-right: 7px;
+        &:nth-child(3){
+            width: 90px;
+        }
+        &:last-child {
+            margin-right: 0;
+            width: 90px;
+        }
+        &:hover, &.active {
+            background-color: #fff;
+        }
     }
 }

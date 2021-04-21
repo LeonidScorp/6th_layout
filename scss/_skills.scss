@@ -12,14 +12,20 @@
     .title {
         color: $black;
         @include title-underline(1, #dfe8ed);
+        left: 3px;
     }
     .subtitle {
         color: $black;
-        max-width: 570px;
-        margin: 44px auto 0;
+        letter-spacing: 0.02em;
+        margin: 43px auto 0;
+        .corrections {
+            letter-spacing: 0.024em;
+            position: relative;
+            left: 3px;
+        }
     }
     .row {
-        margin-top: 81px;
+        margin-top: 82px;
     }
 }
 .skills-percentage {
@@ -30,13 +36,15 @@
     border-radius: 50%;
     line-height: 132px;
     margin: 0 auto;
-    font-size: 50px;
+    font-size: 50.2px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.026em;
     color: $black;
     padding-left: 11px;
     span {
+        position: relative;
+        left: -1px;
         font-size: 34px;
     }
 }

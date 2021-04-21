@@ -1,0 +1,46 @@
+@import "mixin";
+@import "variables";
+#contact {
+    min-height: 819px;
+    padding-top: 120px;
+    background-color: #3c5499;
+    .title {
+        color: #fff;
+        @include title-underline(1, #273a71);
+    }
+    .subtitle {
+        margin-top: 43px;
+    }
+}
+.contact-form {
+    max-width: 860px;
+    @include flex;
+    justify-content: space-between;
+    margin: 76px auto 0;
+    .big-button {
+        margin: 54px auto 0;
+        border-bottom: solid 4px #289ec4;
+        background-color: #30bae7;
+    }
+}
+.contact-form-input {
+    height: 56px;
+    max-width: 414px;
+    background-color: $dark-pink;
+    border: none;
+    &::placeholder {
+        &, .contact-form-textarea::placeholder {
+            font-size: 18px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        line-height: 56px;
+    }
+}
+textarea.contact-form-textarea {
+    margin-top: 27px;
+    height: 200px;
+    max-width: 100%;
+    background-color: $dark-pink;
+    border:none;
+}

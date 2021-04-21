@@ -13,7 +13,7 @@
         width: 118px;
         height: 37px;
     }
-    width: $content-width;
+    max-width: $content-width;
     margin: 0 auto;
     @include flex;
     justify-content: space-between;
@@ -29,6 +29,7 @@
             height: 32px;
             padding: 0 17px;
             list-style: none;
+            border-radius: 4px;
             &:hover {
                 background-color: #643a79;
             }

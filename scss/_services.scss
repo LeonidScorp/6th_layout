@@ -10,8 +10,11 @@
         @include title-underline(0.14, #000);
     }
     .subtitle {
-        max-width: 600px;
+        max-width: 619px;
         margin: 43px auto 0;
+        position: relative;
+        letter-spacing: 0.0225em;
+        left: 2px;
     }
 }
 .services-container {

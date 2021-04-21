@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixin";
+#footer {
+    padding-top: 42px;
+    min-height: 112px;
+    background-color: #344b8e;
+}
+.footer-links {
+    @include flex-center;
+    flex-wrap: wrap;
+}
+.footer-links-item {
+    list-style: none;
+    margin-right: 54.6px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.footer-link {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: 0.5s;  
+    &:hover {
+        color: #30bae7;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+}

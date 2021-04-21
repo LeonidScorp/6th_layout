@@ -15,14 +15,15 @@ body {
     box-sizing: border-box;
 }
 .big-button {
-    font-size: 18px;
     line-height: 26px;
+    font-size: 1.004rem;
     font-weight: 600;
     letter-spacing: 0.02em;
     color: #ffffff;
     width: 293px;
     height: 70px;
     outline: none;
+    text-transform: uppercase;
     &:focus {
         outline: none;
     }

@@ -19,6 +19,7 @@
     }
 }
 .contact-form {
+    position: relative;
     max-width: 860px;
     @include flex;
     justify-content: space-between;
@@ -62,6 +63,7 @@ input::-webkit-input-placeholder::after {
     content: "*";
 }
 textarea.contact-form-textarea {
+    resize: vertical;
     padding: 22px 25px;
     margin-top: 27px;
     height: 200px;
@@ -83,4 +85,14 @@ textarea.contact-form-textarea {
         font-weight: 400;
         color: #ffffff;
     }
+}
+textarea::-webkit-resizer{
+    display: none;
+}
+.resizer-icon {
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    bottom: 137px;
+    right: 8px;
 }
